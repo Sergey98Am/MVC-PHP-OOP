@@ -1,0 +1,16 @@
+{
+    "name": "user/mvc",
+    "authors": [
+        {
+            "name": "Sergey98Am",
+            "email": "serg98barca@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {
+    }
+}
