@@ -19,11 +19,11 @@ class Router
 
         if (!empty($uri[0])) {
             $controller = ucfirst($uri[0]) . 'Controller';
-            // for example PostController
+            // for example ProductController
             unset($uri[0]);
             // unset 'post'
             $controller = 'App\Controller\\' . $controller;
-            // App\Controller\PostController
+            // App\Controller\ProductController
             // echo $controller;
 
             if (class_exists($controller)) {
@@ -35,7 +35,7 @@ class Router
 
         $class = $this->controller;
         $class = new $class;
-        // get object from 'PostController class'
+        // get object from 'ProductController class'
 
         if (isset($uri[1])) {
             $method = $uri[1];
